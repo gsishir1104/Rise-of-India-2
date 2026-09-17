@@ -1,6 +1,8 @@
+using System;
+
 namespace RiseOfIndia2
 {
-    public class Artifact
+    public class Artifact : IInteractable
     {
         public string Name;
         public string Description;
@@ -17,6 +19,12 @@ namespace RiseOfIndia2
             Description = description;
             HistoricalYear = historicalYear;
             Points = points;
+        }
+
+        public void Interact()
+        {
+            Console.WriteLine("You discovered: " + Name);
+            Console.WriteLine(Description);
         }
     }
 }

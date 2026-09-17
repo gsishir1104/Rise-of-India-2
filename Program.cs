@@ -15,6 +15,7 @@ class Program
         );
 
         player.AddScore(artifact.Points);
+        artifact.Interact();
 
         Console.WriteLine("Player: " + player.PlayerName);
         Console.WriteLine("Artifact: " + artifact.Name);
